@@ -81,6 +81,30 @@ body {
 }
 /*  */
 
+/* SOCIAL MEDIA ICON CSS */
+.social-icons {
+  display: flex; 
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+.social-icons a {
+  display: inline-block; 
+  margin: 0 10px; 
+  font-size: 20px; 
+  color: #fff; 
+  text-align: center; 
+  line-height: 40px; 
+  border-radius: 50%; 
+}
+
+.social-icons .icons8-icon {
+  margin-top: 25px;
+  width: 50px !important; 
+  height: 50px !important;
+}
+/*  */
+
 /* MEDIA QUERIES */
 
 /* HIDE MENU ON LARGER SCREENS */
@@ -120,14 +144,15 @@ body {
     text-align: center;
     top: 0;
     left: 0;
-    margin-top: 30px;
+    margin-top: 10px;
     z-index: 1;
     background-color: #333;
     color: #fff;
-    height: 20%;
+    height: 55%;
   }
   .menu.active li {
-    margin-top: 8px;
+    font-size: 1.3rem;
+    margin-top: 20px;
   }
   .menu.active.show {
     opacity: 1;
