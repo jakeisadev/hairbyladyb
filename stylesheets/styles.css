@@ -99,7 +99,7 @@ body {
 }
 
 .social-icons .icons8-icon {
-  margin-top: 85px;
+  margin-top: 55px;
   width: 50px !important; 
   height: 50px !important;
 }
@@ -131,7 +131,7 @@ body {
     top: 0;
     right: 0;
     background-color: #fff;
-    padding: 125px !important;
+    padding: 110px;
     letter-spacing: .1rem;
     transition: all 0.5s ease-in-out;
     opacity: 0; /* set initial opacity to 0 */
@@ -148,10 +148,10 @@ body {
     z-index: 1;
     background-color: #333;
     color: #fff;
-    height: 100% !important;
+    height: 100%;
   }
   .menu.active li {
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
     margin-top: 20px;
   }
   .menu.active.show {
