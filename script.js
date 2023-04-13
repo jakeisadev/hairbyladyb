@@ -1,3 +1,16 @@
+document.addEventListener("DOMContentLoaded", function() {
+// Define the carousel function
+function carousel() {
+  let currentImage = document.querySelector('.carousel-container img:not([style*="opacity: 0"])');
+  let nextImage = currentImage.nextElementSibling || document.querySelector('.carousel-container img:first-child');
+  currentImage.style.opacity = 0;
+  nextImage.style.opacity = 1;
+}
+
+// Call the carousel function every few seconds
+setInterval(carousel, 4000); // change image every 4 seconds
+
+// Add the event listeners for the navbar toggle and document clicks
 let navbarToggle = document.querySelector('.navbar-toggle');
 let menu = document.querySelector('.menu');
 
@@ -15,4 +28,6 @@ document.addEventListener('click', function(event) {
     menu.classList.remove('active');
     menu.classList.remove('show');
   }
+});
+
 });

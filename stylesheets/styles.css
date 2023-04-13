@@ -83,25 +83,71 @@ body {
 
 /* SOCIAL MEDIA ICON CSS */
 .social-icons {
-  display: flex; 
-  justify-content: center; 
-  margin-top: 20px; 
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .social-icons a {
-  display: inline-block; 
-  margin: 0 10px; 
-  font-size: 20px; 
-  color: #fff; 
-  text-align: center; 
-  line-height: 40px; 
-  border-radius: 50%; 
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
 }
 
 .social-icons .icons8-icon {
   margin-top: 55px;
-  width: 50px !important; 
+  width: 50px !important;
   height: 50px !important;
+}
+/*  */
+
+/* HOME PAGE STYLES */
+
+.greeting {
+  margin-top: 25px !important;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.greeting p {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+}
+
+.carousel-container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; /* set the z-index to a value higher than the images */
+}
+
+.carousel-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-container img:first-child {
+  opacity: 1;
 }
 /*  */
 
@@ -132,7 +178,7 @@ body {
     right: 0;
     background-color: #fff;
     padding: 110px;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     transition: all 0.5s ease-in-out;
     opacity: 0; /* set initial opacity to 0 */
     transform: translateY(-100%);
@@ -177,6 +223,17 @@ body {
   }
   .navbar-toggle.active .icon-bar {
     background-color: #fff;
+  }
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-container img {
+    width: 400px;
+    height: 400px; /* make the height auto to preserve aspect ratio */
+    opacity: 0; /* set the default opacity to 0 */
+    transition: opacity 0.5s ease; /* add a transition effect for the opacity */
   }
 }
 /*  */
