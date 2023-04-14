@@ -116,7 +116,9 @@ body {
   font-size: 2rem;
   text-align: center;
   font-family: 'Amatic SC', cursive;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .greeting-heading h1 {
@@ -155,19 +157,6 @@ body {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
-.carousel-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 350px;
-  height: 400px;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1; /* set the z-index to a value higher than the images */
-  border-radius: 4px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-}
-
 .carousel-container img {
   position: absolute;
   top: 0;
@@ -192,7 +181,7 @@ body {
 
 .button-container {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 45px;
 }
 
 .button {
