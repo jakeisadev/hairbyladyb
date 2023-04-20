@@ -16,7 +16,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 98;
+  z-index: 6;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   background-color: #fff;
@@ -61,6 +61,7 @@ body {
   border-radius: 1px;
   margin: 6px 0;
   background-color: #333;
+  z-index: 2;
 }
 
 .navbar-toggle .icon-bar:first-child {
@@ -84,12 +85,18 @@ body {
 .navbar-toggle.active .icon-bar:last-child {
   transform: translateY(-7px) rotate(-45deg);
 }
+
+.navbar-toggle.active .icon-bar {
+  background-color: #fff !important;
+  z-index: 999;
+}
 /*  */
 
 /* SOCIAL MEDIA ICON CSS */
 .social-icons {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 20px;
 }
 
@@ -104,9 +111,9 @@ body {
 }
 
 .social-icons .icons8-icon {
-  margin-top: 55px;
-  width: 50px !important;
-  height: 50px !important;
+  margin-top: 10px;
+  width: 40px !important;
+  height: 40px !important;
 }
 /*  */
 
@@ -225,6 +232,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
+  padding: 20px;
 }
 
 .policy-header,
@@ -243,6 +251,7 @@ body {
 @media screen and (min-width: 768px) {
   .menu {
     display: block;
+    z-index: 2;
   }
   .navbar-toggle {
     display: none;
@@ -266,6 +275,7 @@ body {
     bottom: 0;
     background-color: #fff;
     padding: 110px;
+    z-index: 4;
     letter-spacing: 0.1rem;
     transition: all 0.5s ease-in-out;
     opacity: 0; /* set initial opacity to 0 */
@@ -280,15 +290,15 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    margin-top: 10px;
-    z-index: 99;
+    z-index: 3;
     background-color: #333;
     color: #fff;
     height: 100%;
   }
   .menu.active li {
     font-size: 1.8rem;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: 5px;
   }
   .menu.active.show {
     opacity: 1;
@@ -305,6 +315,12 @@ body {
     opacity: 0;
     display: none;
   }
+  .navbar-toggle-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+  }
   .navbar-toggle {
     display: block;
   }
@@ -315,14 +331,16 @@ body {
     border-radius: 1px;
     margin: 4px 0;
     background-color: #333;
-    z-index: 100;
+    border:1px solid red;
   }
   .navbar-toggle:hover .icon-bar {
     background-color: #000;
   }
   .navbar-toggle.active .icon-bar {
     background-color: #fff;
-    z-index: 100;
+  }
+  span.icon-bar {
+    border: 1px solid #333 !important;
   }
   .carousel-container {
     display: flex;
