@@ -396,6 +396,7 @@ h3 {
     margin-left: 25px;
   }
   .contact-box h2 {
+    font-size: 1.8rem;
     margin-top: 15px;
     font-family: "Amatic SC", cursive;
   }
@@ -403,6 +404,7 @@ h3 {
     margin-top: 8px;
     line-height: 1.5rem;
     font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
   }
 }
 /*  */
