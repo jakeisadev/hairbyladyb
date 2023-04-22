@@ -208,6 +208,7 @@ body {
   color: #fff;
   background-color: #dbce85;
   border: none;
+  font-family: "Open Sans", sans-serif;
   border-radius: 30px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
@@ -217,7 +218,29 @@ body {
   background-color: #fff;
   color: #dbce85;
   cursor: pointer;
+  font-weight: 300;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #dbce85;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
   font-family: "Open Sans", sans-serif;
+}
+
+.contact-button:hover {
+  background-color: #fff;
+  color: #dbce85;
+  cursor: pointer;
   font-weight: 300;
 }
 
@@ -243,6 +266,12 @@ body {
   font-family: "Amatic SC", cursive;
   padding-top: 35px;
 }
+
+h3 {
+  margin: 25px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
 /*  */
 
 /* MEDIA QUERIES */
@@ -259,7 +288,7 @@ body {
 }
 /*  */
 
-/* SHOW HAMBURGER ICON ON SMALLER SCREENS */
+/* SMALLER SCREENS */
 @media screen and (max-width: 767px) {
   nav a,
   nav a:active {
@@ -352,6 +381,28 @@ body {
     height: 400px; /* make the height auto to preserve aspect ratio */
     opacity: 0; /* set the default opacity to 0 */
     transition: opacity 0.5s ease; /* add a transition effect for the opacity */
+  }
+  .big-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .big-logo img {
+    width: 300px;
+    height: 350px;
+  }
+  .contact-box {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+  .contact-box h2 {
+    margin-top: 15px;
+    font-family: "Amatic SC", cursive;
+  }
+  .contact-box p {
+    margin-top: 8px;
+    line-height: 1.5rem;
+    font-family: "Open Sans", sans-serif;
   }
 }
 /*  */
